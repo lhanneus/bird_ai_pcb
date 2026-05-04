@@ -48,31 +48,29 @@ Engrave trace file image
 
 Milling process of the FR1 board with a Roland SRM CNC machine.
 
-![Milling](doc_images/pcb_01.jpg)
+![Milling](doc_images/milling_01.jpg)
 
-Result
-
-![Milling result](doc_images/pcb_02.jpg)
-
+![Milling](doc_images/milling_02.jpg)
 
 Video of the FR1 board CNC milled : https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/milling.mp4
 
-
-And laser engraving of the circuit with an Xtool F1 ultra.
+And then laser engraving of the circuit with an Xtool F1 ultra.
 
 Video of the laser engraving : "https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4
 
+Result
 
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
 
 Result of the board engraved.
+
+![Milling](doc_images/pcb_01.jpg)
 
 Soldered and stuff with the Xiao ESP32-C6 & ICS-43434 PCB components
 
 ![Box](doc_images/pcb_02.jpg)
 
 I use a 8 pin connector, because I didn't have anymore 6 pin connector.
-
 
 ## Box
 
