@@ -1,26 +1,10 @@
 # bird_ai_pcb
 Xiao ESP32-C6 with ICS-43434 PCB , RTSP streaming for BirdNet recognition
 
-## PCB schematic
-
-## PCB board
-
-## Kicad files , gerber & PNG
-
-[/kicad_files](/kicad_files)
-
-[/geber_files](/geber_files)
-
-[/png_engrave_file](/png_engrave_file)
-
-Cut out board file image
-![Cut](png_engrave_file/cut.png)
-
-Engrave trace file image
-![traces_toplayer](png_engrave_file/traces_toplayer_0.png)
+![Box](doc_images/box_01.jpg)
 
 
-### Schematic
+### PCB Schematic
 
 ![Schematic](doc_images/kicad_schematic.png)
 
@@ -31,11 +15,25 @@ BCLK / SCK - D3
 
 I didn't find the ICS-43434 component so I create my own 6 pin connector
 
-### Board
+### PCB Board
 
 ![Schematic](doc_images/kicad_traces.png)
 
 I didn't find the correct Xiao ESP32-C6 footprint I use a similar footprint. This need to be improved to allow battery connection for a future solar-powered version.
+
+## Kicad files , gerber & PNG
+
+[/kicad_files](kicad_files)
+
+[/geber_files](geber_files)
+
+[/png_engrave_file](png_engrave_file)
+
+Cut out board file image
+![Cut](png_engrave_file/cut.png)
+
+Engrave trace file image
+![traces_toplayer](png_engrave_file/traces_toplayer_0.png)
 
 ## Fabrication process
 
@@ -48,52 +46,13 @@ Result
 ![Milling result](doc_images/pcb_02.jpg)
 
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/milling.mp4" type="video/mp4">
-  Your browser does not support the video tag.  
-</video>
-
+Video of the FR1 board CNC milled : https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/milling.mp4
 
 
 And laser engraving of the circuit with an Xtool F1 ultra.
 
-video1
+Video of the laser engraving : "https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4
 
-<video width="640" height="360" controls>
-  <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4" type="video/mp4">
-  Your browser does not support the video tag.  
-</video>
-
-video2
-
-<video width="640" height="360" controls>
-  <source src="https://github.com/lhanneus/bird_ai_pcb/blob/main/doc_images/laser_engraving.mp4" type="video/mp4">
-  Your browser does not support the video tag.  
-</video>
-
-video3
-
-<video controls width="640">
-  <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-video4
-
-<video controls width="640">
-  <source src="https://raw.githubusercontent.com/lhanneus/bird_ai_pcb/main/doc_images/laser_engraving.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-video 5
-
-<video controls width="640">
-  <source src="./doc_images/laser_engraving.mp4" type="video/mp4">
-</video>
-
-<video controls width="640">
-  <source src="doc_images/laser_engraving.mp4" type="video/mp4">
-</video>
 
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
 
@@ -133,14 +92,20 @@ There is a web flasher version (use Chrome) on https://esp32mic.msmeteo.cz/
 
 The following lines ensure it's the external wifi antenna that is used.
 
-'''TO BE DONE'''
+```
+    pinMode(3, OUTPUT);
+    digitalWrite(3, LOW);
+    Serial.println("RF switch control enabled (GPIO3 LOW)");
+    pinMode(14, OUTPUT);
+    digitalWrite(14, HIGH);
+    Serial.println("External antenna selected (GPIO14 HIGH)");
+```
 
 
-After uploading the code, you can put parameters by connecting to the wifi created, page 192.168.4.1
+After uploading the code, you can put parameters by connecting to the wifi captive portal created, page 192.168.4.1
 Then fill your ssid and password codes.
 
-It will then be connected to
-esp32mic.local
+It will then be accesible on your wifi network on esp32mic.local
 
 You can improved the parameters on that page. Usually reducing the Wi-Fi TX Power is good.
 
@@ -153,6 +118,37 @@ ffplay: ffplay -rtsp_transport tcp rtsp://esp32mic.local:8554/audio
 
 ffplay is used by birdnet.
 
+
+## Expected performance
+Here a few data extracted from the ICS-43434 datasheet
+
+Omni directionnal
+50Hz - 15KHz
+MEMS microphone is bottom ported
+1.6-3.6V max device only
+Sensitivity: −26 dB FS ±1dB
+SNR High Performance Mode: 65 dBA
+SNR Low Power Mode:  64 dBA
+Current Draw High Performance Mode: 490 µA
+Current Draw Low Power Mode: 230 µA
+Microphone Acoustic Overload Point (AOP) 120 dB    SPL
+Sample Rate High Performance Mode: 23 ~ 51.6 kHz
+Sample Rate Low Power Mode: 6.25 ~ 18.75 kHz
+24bit data
+
+This is incredible for the price.
+
+## Power consumption:
+
+To be measured more precisely.
+
+Some real condition test, worked for 5 days on a powerbank.
+
+## Temperature in external condition
+
+I test the system in different location in my garden.
+The system shutdown in some place due to the temperature protection, protecting above 80°C.
+The black color of the metal case is probably nice looking but not efficient for this aspect.
 
 ## Future Improvement
 
