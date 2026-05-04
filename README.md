@@ -78,6 +78,13 @@ video3
   Your browser does not support the video tag.
 </video>
 
+video4
+
+<video controls width="640">
+  <source src="https://raw.githubusercontent.com/lhanneus/bird_ai_pcb/main/doc_images/laser_engraving.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
 
 
