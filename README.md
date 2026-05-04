@@ -57,16 +57,26 @@ Result
 
 And laser engraving of the circuit with an Xtool F1 ultra.
 
+video1
+
 <video width="640" height="360" controls>
   <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4" type="video/mp4">
   Your browser does not support the video tag.  
 </video>
+
+video2
 
 <video width="640" height="360" controls>
   <source src="https://github.com/lhanneus/bird_ai_pcb/blob/main/doc_images/laser_engraving.mp4" type="video/mp4">
   Your browser does not support the video tag.  
 </video>
 
+video3
+
+<video controls width="640">
+  <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
 
