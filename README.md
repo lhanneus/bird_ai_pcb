@@ -85,6 +85,16 @@ video4
   Your browser does not support the video tag.
 </video>
 
+video 5
+
+<video controls width="640">
+  <source src="./doc_images/laser_engraving.mp4" type="video/mp4">
+</video>
+
+<video controls width="640">
+  <source src="doc_images/laser_engraving.mp4" type="video/mp4">
+</video>
+
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
 
 
@@ -117,9 +127,32 @@ Drill 3 holes in the metal box:
 
 ## Upload the code
 
+Flash with https://github.com/Sukecz/birdnetgo-esp32-rtsp-mic code.
+There is a web flasher version (use Chrome) on https://esp32mic.msmeteo.cz/
+
+
 The following lines ensure it's the external wifi antenna that is used.
 
 '''TO BE DONE'''
+
+
+After uploading the code, you can put parameters by connecting to the wifi created, page 192.168.4.1
+Then fill your ssid and password codes.
+
+It will then be connected to
+esp32mic.local
+
+You can improved the parameters on that page. Usually reducing the Wi-Fi TX Power is good.
+
+And broadcast RTSP audio on
+rtsp://esp32mic.local:8554/audio
+
+You can test the RSTP audio with VLC or ffmpeg:
+VLC: Media → Open Network Stream → paste the RTSP URL.
+ffplay: ffplay -rtsp_transport tcp rtsp://esp32mic.local:8554/audio
+
+ffplay is used by birdnet.
+
 
 ## Future Improvement
 
