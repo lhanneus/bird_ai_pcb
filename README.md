@@ -3,14 +3,15 @@ Xiao ESP32-C6 with ICS-43434 PCB , RTSP streaming for BirdNet recognition
 
 ![Box](doc_images/box_01.jpg)
 
-
-### PCB Schematic
-
 Material:
 - Xiao ESP32-C6 : https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/
 - ICS-43434 break out board : https://www.adafruit.com/product/6049 , other models and brands exists.
 - 6 pin SMT connector
 - the pcb board, here with FR1 material for fabrication
+- a **metal** case
+- external antenna and pigtail connector for wifi
+
+### PCB Schematic
 
 ![Schematic](doc_images/kicad_schematic.png)
 
