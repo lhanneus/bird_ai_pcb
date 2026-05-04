@@ -20,7 +20,6 @@ Engrave trace file image
 ![traces_toplayer](png_engrave_file/traces_toplayer_0.png)
 
 
-
 ### Schematic
 
 ![Schematic](doc_images/kicad_schematic.png)
@@ -62,6 +61,12 @@ And laser engraving of the circuit with an Xtool F1 ultra.
   <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4" type="video/mp4">
   Your browser does not support the video tag.  
 </video>
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/lhanneus/bird_ai_pcb/blob/main/doc_images/laser_engraving.mp4" type="video/mp4">
+  Your browser does not support the video tag.  
+</video>
+
 
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
 
