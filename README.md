@@ -6,14 +6,22 @@ Xiao ESP32-C6 with ICS-43434 PCB , RTSP streaming for BirdNet recognition
 
 ### PCB Schematic
 
+Material:
+- Xiao ESP32-C6 : https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/
+- ICS-43434 break out board : https://www.adafruit.com/product/6049 , other models and brands exists.
+- 6 pin SMT connector
+- the pcb board, here with FR1 material for fabrication
+
 ![Schematic](doc_images/kicad_schematic.png)
 
 
-LRCLK / WS - D1
-SD (DOUT) - D2
-BCLK / SCK - D3
+| ICS-43434   | Xiao ESP32-C6 |
+| ----------- | ------------- |
+| LRCLK / WS  | D1            |
+| SD (DOUT)   | D2            |
+| BCLK / SCK  | D3            |
 
-I didn't find the ICS-43434 component so I create my own 6 pin connector
+I didn't find the ICS-43434 schematic & footprint so I created my own 6 pin connector.
 
 ### PCB Board
 
@@ -56,12 +64,13 @@ Video of the laser engraving : "https://github.com/lhanneus/bird_ai_pcb/raw/refs
 
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
 
-
 Result of the board engraved.
 
 Soldered and stuff with the Xiao ESP32-C6 & ICS-43434 PCB components
 
 ![Box](doc_images/pcb_02.jpg)
+
+I use a 8 pin connector, because I didn't have anymore 6 pin connector.
 
 
 ## Box
