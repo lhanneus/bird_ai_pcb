@@ -130,6 +130,7 @@ ffplay is used by birdnet.
 ## Expected performance
 Here a few data extracted from the ICS-43434 datasheet
 
+```
 Omni directionnal
 50Hz - 15KHz
 MEMS microphone is bottom ported
@@ -143,6 +144,7 @@ Microphone Acoustic Overload Point (AOP) 120 dB    SPL
 Sample Rate High Performance Mode: 23 ~ 51.6 kHz
 Sample Rate Low Power Mode: 6.25 ~ 18.75 kHz
 24bit data
+```
 
 This is incredible for the price.
 
@@ -168,5 +170,3 @@ The black color of the metal case is probably nice looking but not efficient for
 Licences CC BY-NC-SA 4.0 : https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 Author : Luc Hanneuse
-
-Any commercial application must be discussed & accepted by the Author.
