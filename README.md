@@ -50,15 +50,16 @@ Result
 
 
 <video width="640" height="360" controls>
-  <source src="doc_images/milling.mp4" type="video/mp4">
+  <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/milling.mp4" type="video/mp4">
   Your browser does not support the video tag.  
 </video>
+
 
 
 And laser engraving of the circuit with an Xtool F1 ultra.
 
 <video width="640" height="360" controls>
-  <source src="doc_images/laser_engraving.mp4" type="video/mp4">
+  <source src="https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4" type="video/mp4">
   Your browser does not support the video tag.  
 </video>
 
