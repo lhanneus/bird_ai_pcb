@@ -191,7 +191,9 @@ The black color of the metal case is probably nice looking but not efficient for
 ## Future Improvement
 
 ~1. Reduce PCB size~
+
 2. Connect battery Xiao connector and use solar power & 18650 standard battery with associated controlers // Partially documented
+
 3. Improved raining protection
 
 ## Licence
