@@ -13,7 +13,7 @@ Material:
 
 ### PCB Schematic
 
-![Schematic](doc_images/kicad_schematic.png)
+![Schematic](doc_images/1-2/kicad_1-2_schematic.png)
 
 
 | ICS-43434   | Xiao ESP32-C6 |
@@ -22,13 +22,17 @@ Material:
 | SD (DOUT)   | D2            |
 | BCLK / SCK  | D3            |
 
-I didn't find the ICS-43434 schematic & footprint so I created my own 6 pin connector.
 
 ### PCB Board
 
 ![Schematic](doc_images/kicad_traces.png)
 
 I didn't find the correct Xiao ESP32-C6 footprint I use a similar footprint. This need to be improved to allow battery connection for a future solar-powered version.
+
+For version 1.2, correct Xiao ESP32-C6 footprint, smaller pcb board to be compatible with "cheap" MHP30 heating system.
+
+![Schematic](doc_images/1-2/kicad_1-2_schematic.png)
+
 
 ## Kicad files , gerber & PNG
 
@@ -37,6 +41,8 @@ I didn't find the correct Xiao ESP32-C6 footprint I use a similar footprint. Thi
 [/geber_files](geber_files)
 
 [/png_engrave_file](png_engrave_file)
+
+I used https://gerber2png.fablabkerala.in/ to create the png file from gerber kicad files.
 
 Cut out board file image
 ![Cut](png_engrave_file/cut.png)
@@ -60,7 +66,7 @@ Video of the laser engraving : "https://github.com/lhanneus/bird_ai_pcb/raw/refs
 
 Result
 
-Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes.
+Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes with Unidirectionnel Option cross & hatch option in the advance settings.
 
 Result of the board engraved.
 
@@ -71,6 +77,28 @@ Soldered and stuff with the Xiao ESP32-C6 & ICS-43434 PCB components
 ![Box](doc_images/pcb_02.jpg)
 
 I use a 8 pin connector, because I didn't have anymore 6 pin connector.
+
+Necessary method for version 1.2 is solder paste as the battery connector is under the Xiao ESP32
+
+![Schematic](doc_images/1-2/pcb_1-2_0.jpg)
+
+![Schematic](doc_images/1-2/pcb_1-2_1.jpg)
+
+![Schematic](doc_images/1-2/pcb_1-2_2.jpg)
+
+![Schematic](doc_images/1-2/pcb_1-2_3.jpg)
+
+![Schematic](doc_images/1-2/pcb_1-2_4.jpg)
+
+![Schematic](doc_images/1-2/pcb_1-2_5.jpg)
+
+![Schematic](doc_images/1-2/pcb_1-2_6.jpg)
+
+Here with an 18650 lithium battery and the protection circuit
+
+![Schematic](doc_images/1-2/pcb_1-2_7.jpg)
+
+The solar MPPT and solar pannel are ready to be tested.
 
 ## Box
 
