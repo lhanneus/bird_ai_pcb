@@ -31,7 +31,7 @@ I didn't find the correct Xiao ESP32-C6 footprint I use a similar footprint. Thi
 
 For version 1.2, correct Xiao ESP32-C6 footprint, smaller pcb board to be compatible with "cheap" MHP30 heating system.
 
-![Schematic](doc_images/1-2/kicad_1-2_schematic.png)
+![Schematic](doc_images/1-2/kicad_1-2_trace.png)
 
 
 ## Kicad files , gerber & PNG
@@ -45,10 +45,10 @@ For version 1.2, correct Xiao ESP32-C6 footprint, smaller pcb board to be compat
 I used https://gerber2png.fablabkerala.in/ to create the png file from gerber kicad files.
 
 Cut out board file image
-![Cut](png_engrave_file/cut.png)
+![Cut](png_engrave_file/1-2_outline.png)
 
 Engrave trace file image
-![traces_toplayer](png_engrave_file/traces_toplayer_0.png)
+![traces_toplayer](png_engrave_file/1-2_traces.png)
 
 ## Fabrication process
 
