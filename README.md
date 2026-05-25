@@ -100,6 +100,23 @@ Here with an 18650 lithium battery and the protection circuit
 
 The solar MPPT and solar pannel are ready to be tested.
 
+Supprisingly the 18650 battery and the circuit protection & MPPT fit inside the metal enclosure.
+
+![Battery inside the metal box](doc_images/1-2/battery_inside.jpg)
+
+I used an old defect wood bird house. The top angle is close the ideal angle for my place ~40°, I glue the small 6V solar pannel.
+
+![Solar on a wood bird house](doc_images/1-2/solar_001.jpg)
+
+Solar pannel allow to install the setup in a more ideal position, the solar pannel facing south and you'll still need a good wifi coverage.
+
+![Installed](doc_images/1-2/solar_002.jpg)
+
+In the meantime I order & manufacture the pcb with my design. Here a photo.
+
+![Installed](doc_images/1-2/pcb1-2.jpg)
+
+
 ## Box
 
 Metal box is really important. The wifi emitted by the esp32 is massively disturbing the mems microphone. 
