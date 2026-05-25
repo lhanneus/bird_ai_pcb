@@ -98,9 +98,7 @@ Here with an 18650 lithium battery and the protection circuit
 
 ![Schematic](doc_images/1-2/pcb_1-2_7.jpg)
 
-The solar MPPT and solar pannel are ready to be tested.
-
-Supprisingly the 18650 battery and the circuit protection & MPPT fit inside the metal enclosure.
+Supprisingly the 18650 battery and the circuit protection & MPPT fit inside the metal enclosure. But then you save to protect every battery for short circuit with the metal case or any other component, here I used shrink tube and 18650 battery holder.
 
 ![Battery inside the metal box](doc_images/1-2/battery_inside.jpg)
 
@@ -115,7 +113,6 @@ Solar pannel allow to install the setup in a more ideal position, the solar pann
 In the meantime I order & manufacture the pcb with my design. Here a photo.
 
 ![Installed](doc_images/1-2/pcb1-2.jpg)
-
 
 ## Box
 
