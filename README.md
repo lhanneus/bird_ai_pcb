@@ -11,6 +11,30 @@ Material:
 - a **metal** case
 - external antenna and pigtail connector for wifi
 
+## How does it works, where is the AI ?
+
+ICS-43434 microphone → ESP32-C6 I2S capture → audio stream over Wi-Fi/RTSP → BirdNET recognition server (on a rapsberry pi).
+
+This project focus on the 3 first part :
+ICS-43434 microphone → ESP32-C6 I2S capture → audio stream over Wi-Fi/RTSP →
+
+### Bill of materials BOM
+
+DIY Hardware cost about 12€ or less .
+
+| Part | Reference | Quantity | Notes |
+| :--- | :--- | :---: | :--- |
+| MCU Board | Seeed Xiao ESP32-C6 | 1 | Main controller |
+| Microphone | ICS-43434 breakout board | 1 | I2S MEMS microphone |
+| PCB | Custom PCB | 1 | KiCad/Gerber files provided |
+| Connector | 6-pin connector | 1 | |
+| Enclosure | Metal Case | 1 | **IMPORTANT**: Required to shield WiFi interference |
+| Antenna | External WiFi antenna (U.FL) | 1 | For extended range |
+
+Battery option & Solar pannel option
+TBD.
+
+
 ### PCB Schematic
 
 ![Schematic](doc_images/1-2/kicad_1-2_schematic.png)
@@ -62,9 +86,7 @@ Video of the FR1 board CNC milled : https://github.com/lhanneus/bird_ai_pcb/raw/
 
 And then laser engraving of the circuit with an Xtool F1 ultra.
 
-Video of the laser engraving : "https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4
-
-Result
+Video of the laser engraving : https://github.com/lhanneus/bird_ai_pcb/raw/refs/heads/main/doc_images/laser_engraving.mp4
 
 Xtool F1 ultra parameters were 100% power IR laser. Engraved between 20 to 30 passes with Unidirectionnel Option cross & hatch option in the advance settings.
 
@@ -133,6 +155,12 @@ Drill 3 holes in the metal box:
 
 ## Audio Samples result
 
+Share on other social media. I'll share with other support.
+
+Live spectrogram & recognition : https://www.linkedin.com/posts/luc-hanneuse-9984569_birdnet-ugcPost-7464689365605093376-QiMQ/
+
+Recording of a Falcon after the disappearing of many of my Duckling : https://www.linkedin.com/posts/luc-hanneuse-9984569_duckling-vs-falcon-activity-7459691452105646082-Vw8M
+
 
 ## Upload the code
 
@@ -168,6 +196,8 @@ ffplay: ffplay -rtsp_transport tcp rtsp://esp32mic.local:8554/audio
 
 ffplay is used by birdnet.
 
+Since a few release the .local adress name change. And It is allowed now to switch between TCP or UDP ( https://github.com/Sukecz/esp32-birdnet-mic/releases/tag/v1.8.0 ) , even to broadcast 2 RTSP signal at the same time.
+
 
 ## Expected performance
 Here a few data extracted from the ICS-43434 datasheet
@@ -202,13 +232,26 @@ I test the system in different location in my garden.
 The system shutdown in some place due to the temperature protection, protecting above 80°C.
 The black color of the metal case is probably nice looking but not efficient for this aspect.
 
+## BirdNetGO
+
+My quickest and simplest way to have a functional BirdNetGO system is to flash Homeassistant to an SD card with HA OS for a raspberry pi: https://www.home-assistant.io/installation/raspberrypi/#install-home-assistant-operating-system
+
+Then to add an app/repository https://github.com/alexbelgium/hassio-addons
+
+After adding this repository you'll find in the list **birdnet-go** wich use https://github.com/alexbelgium/hassio-addons/tree/master/birdnet-go
+
+After installation you can add the RTSP audio source easyli.
+
+
 ## Future Improvement
 
 ~1. Reduce PCB size~
 
-2. Connect battery Xiao connector and use solar power & 18650 standard battery with associated controlers // Partially documented
+~2. Connect battery Xiao connector and use solar power & 18650 standard battery with associated controlers // Partially documented~
 
-3. Improved raining protection
+~3. Improved raining protection, done with the reuse bird house~
+
+4. expand to ultrasonic with another cheap mems microphone, to allow bats recognition, introduced with a recent Birndetgo release.
 
 ## Licence
 
