@@ -1,6 +1,7 @@
 # bird_ai_pcb
 Xiao ESP32-C6 with ICS-43434 PCB , RTSP streaming for BirdNet recognition
 
+![Box](doc_images/1-2/closed-box.jpg)
 ![Box](doc_images/box_01.jpg)
 
 Material:
