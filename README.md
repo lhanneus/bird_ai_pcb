@@ -283,6 +283,8 @@ There is plenty more to setup but you have now a functionning microphone !!!
 
 ## Testing without birdnet
 
+*Be sure to be on the same wifi!*
+
 You can test the RSTP audio with VLC or ffmpeg:
 VLC: Media → Open Network Stream → paste the RTSP URL.
 RTSP url can look like rtsp://192.168.1.36:8554/audio1 , but use your own adress !
