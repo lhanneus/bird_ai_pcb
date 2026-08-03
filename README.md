@@ -277,16 +277,19 @@ and by clicking you should see the live sonogram
 
 ![Box](doc_images/live-02.png)
 
-There is plenty more to setup but you have now a functionning microhpone !!!
+There is plenty more to setup but you have now a functionning microphone !!!
 
 
 
-And broadcast RTSP audio on
-rtsp://esp32mic.local:8554/audio
+## Testing without birdnet
 
 You can test the RSTP audio with VLC or ffmpeg:
 VLC: Media → Open Network Stream → paste the RTSP URL.
-ffplay: ffplay -rtsp_transport tcp rtsp://esp32mic.local:8554/audio
+RTSP url can look like rtsp://192.168.1.36:8554/audio1 , but use your own adress !
+
+ffplay: 
+```ffplay -rtsp_transport tcp rtsp://192.168.1.36:8554/audio1```
+replace the rtsp://192.168.1.36:8554/audio1 with your board adress
 
 ffplay is used by birdnet.
 
