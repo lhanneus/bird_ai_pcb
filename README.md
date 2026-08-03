@@ -168,7 +168,6 @@ Recording of a Falcon after the disappearing of many of my Duckling : https://ww
 Flash with https://github.com/Sukecz/birdnetgo-esp32-rtsp-mic code.
 There is a web flasher version (use Chrome) on https://esp32mic.msmeteo.cz/
 
-
 The following lines ensure it's the external wifi antenna that is used.
 
 ```
@@ -180,13 +179,107 @@ The following lines ensure it's the external wifi antenna that is used.
     Serial.println("External antenna selected (GPIO14 HIGH)");
 ```
 
+### Easy firmware flash
 
-After uploading the code, you can put parameters by connecting to the wifi captive portal created, page 192.168.4.1
-Then fill your ssid and password codes.
+The easiest way to flash is to use this link https://esp32mic.msmeteo.cz/ with firefox or chrome that allowed usb with a browser.
 
-It will then be accesible on your wifi network on esp32mic.local
+Click on connect and have the board connected to your computer
 
-You can improved the parameters on that page. Usually reducing the Wi-Fi TX Power is good.
+![Box](doc_images/easy_flash_01.jpg)
+
+You will get whit popup and to flash select flash (it takes under 2 minutes to flash). Keep that window open.
+
+![Box](doc_images/easy_flash_02.jpg)
+
+Once the flash finish, select *Logs & Console*
+
+You will have this screen, and click on *Reset Device* , then console message will appears.
+
+![Box](doc_images/logs_reset.jpg)
+
+After clicking reset you should see those messages
+
+![Box](doc_images/console-1st-start.png)
+
+important part is that your board now create a wifi you have to connect to configure the device and to connect it to your own wifi running birdnet system.
+
+SSID is normally ESP32-RTSP-Mic-AP
+
+On your computer you have to connect to that wifi connection
+
+![Box](doc_images/wifi-ap.png)
+
+Then connect to this adress in your browser : 192.168.4.1
+
+![Box](doc_images/config1.png)
+
+Click on the "Configure Wifi" button
+
+![Box](doc_images/config2.png)
+
+Select your wifi network and enter your password. In my case, my wifi is called Theleme, but you have a different wifi connection name at home. Then click *Save*
+
+![Box](doc_images/config3.png)
+
+On your other window with the log console you should see that the connection suceed. You have also to connect your computer to your home wifi.
+
+![Box](doc_images/config4.png)
+
+In the log are important informations to get and understand:
+the ip adress of the microphone and that it suceed to connect to your wifi
+also the RSTP adress that we will have to enter in the birdnet sound channel.
+
+The console in my case show 192.168.1.36 as IP adress , yours is probably different.
+
+![Box](doc_images/config5.png)
+
+And my RTSP adress is rtsp://192.168.1.36:8554/audio1 , that is needed for Birdnet audio !
+
+![Box](doc_images/config6.png)
+
+Connect your browser to the IP adress to configure the microphone , for me on 192.168.1.36 browser page
+
+![Box](doc_images/browser_config_1.png)
+
+![Box](doc_images/browser_config_2.png)
+
+You can improved the parameters on that page. Usually reducing the Wi-Fi TX Power is good. Also filtering the low frequency is usefull, birds don't emit in those frequency, it's mainly noise.
+
+On your BirndetGo server, go to the *Audio* parameters then click on *Streams*
+
+![Box](doc_images/select_stream-01.png)
+
+Click on add a stream
+
+![Box](doc_images/select_stream-02.png)
+
+Fill in the RTSP adress, mine is RTSP adress is rtsp://192.168.1.36:8554/audio1 , your adress is probably different. Add a name .
+
+![Box](doc_images/select_stream-03.png)
+
+Click on test stream, you should get a 48KHz response
+
+![Box](doc_images/select_stream-04.png)
+
+If everything is correct click on save, and your microphone will start streaming with a nice green "connected" message !!!
+
+![Box](doc_images/select_stream-05.png)
+
+![Box](doc_images/select_stream-06.png)
+
+![Box](doc_images/select_stream-07.png)
+
+You can directly listen to the stream with the new feature "live aduio"
+
+![Box](doc_images/live-01.png)
+
+and by clicking you should see the live sonogram
+
+![Box](doc_images/live-02.png)
+
+There is plenty more to setup but you have now a functionning microhpone !!!
+
+
 
 And broadcast RTSP audio on
 rtsp://esp32mic.local:8554/audio
