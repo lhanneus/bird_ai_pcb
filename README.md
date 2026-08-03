@@ -287,7 +287,7 @@ There is plenty more to setup but you have now a functionning microphone !!!
 
 You can test the RSTP audio with VLC or ffmpeg:
 VLC: Media → Open Network Stream → paste the RTSP URL.
-RTSP url can look like rtsp://192.168.1.36:8554/audio1 , but use your own adress !
+RTSP url can look like rtsp://192.168.1.36:8554/audio1 or rtsp://esp32mic-139634.local:8554/audio1 , but use your own adress !
 
 ffplay: 
 ```ffplay -rtsp_transport tcp rtsp://192.168.1.36:8554/audio1```
