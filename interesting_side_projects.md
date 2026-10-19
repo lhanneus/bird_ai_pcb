@@ -1,0 +1,25 @@
+# a list of a few interesting related projects
+
+When you have a Birdnet system working, those are a few selected projects related mainly to display informations in differents forms.
+
+## BirdNetPi on a Cheap Yellow Display (CYD)
+
+https://github.com/ThomDyson/BirdNetDisplay
+
+a "cheap" below 20€ board with an esp32 and a color screen that display birds informations.
+
+picture from ThomDyson repo
+
+![Box](https://github.com/ThomDyson/BirdNetDisplay/raw/main/assets/sample_display_screen.jpg)
+
+
+## Html dynamic display page
+
+BirdNetDisplay
+
+https://github.com/bpm323git/BirdNetDisplay/
+
+Cool Birdnet display , extremely easy to use : it's an html page , you just need to fill your own birdnetgo server adress and it displays your data and a few infos.
+
+![Box](https://private-user-images.githubusercontent.com/84604142/595710163-2fa09b1d-a1cc-4364-ad4e-d29f45b7282b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI0MDQ0NzksIm5iZiI6MTc5MjQwNDE3OSwicGF0aCI6Ii84NDYwNDE0Mi81OTU3MTAxNjMtMmZhMDliMWQtYTFjYy00MzY0LWFkNGUtZDI5ZjQ1YjcyODJiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDE5VDEwMDI1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE4ZTUyYTgyMjQ4MGU4YjgwYTQwYjE3NzhhZTNjZjNkOGFhNzJiMzRhNzJhNDRhODJiYjI5MmMwOGI2MmM1NjImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.sd4iy14hNeXfeYcGNZpWkfnW_NrBIWFq01Nh6uYiQpY)
+![Box](https://private-user-images.githubusercontent.com/84604142/595710753-55610d99-4054-4378-b7a8-3eb50319c95d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTI0MDQ0NzksIm5iZiI6MTc5MjQwNDE3OSwicGF0aCI6Ii84NDYwNDE0Mi81OTU3MTA3NTMtNTU2MTBkOTktNDA1NC00Mzc4LWI3YTgtM2ViNTAzMTljOTVkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjEwMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYxMDE5VDEwMDI1OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE1ZWNkNWUyZWI5OGJiZGY2MjcxNjhkMGRmOGY1NTk4ZjM2MjNmMDliMGFkNWYxZjgxY2Y3MjFmN2RjYWNhZDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.W5PDdCZVKOsLu1Wir08Fo6wSOSn29BCEBIyF98Tw_ac)
