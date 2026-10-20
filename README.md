@@ -341,11 +341,17 @@ After adding this repository you'll find in the list **birdnet-go** wich use htt
 
 After installation you can add the RTSP audio source easyli.
 
-## In the news
+## In the news & in exhibitions
 
 I did a workshop to build this electronic board during FabX Bottrop, from 27 till 31st august, with a bunch of European FabLab.
 
 A local german newspaper mention quickly the BirdNET workshop : https://www.waz.de/lokales/bottrop/article412745145/basteln-auf-weltniveau-bottrops-fablab-zieht-internationale-maker-community-an.html
+
+The system was exhibited at the exibition *Communs d’urgence : avant tout, faire ensemble* in the *France Degsin Week* at Toulouse RoseLab https://francedesignweek.fr/evenement/communs-durgence-avant-tout-faire-ensemble/ & https://francedesignweek.fr/
+
+Then exibited during OcoterMake from the *Réseau Français des FabLabs* in October. https://www.rfflabs.fr/octobermake-2026/
+
+Due to the sucess the exibition will be travelling across France, I'll try to keep this page updated
 
 ## Future Improvement
 
