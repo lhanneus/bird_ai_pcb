@@ -349,6 +349,8 @@ A local german newspaper mention quickly the BirdNET workshop : https://www.waz.
 
 The system was exhibited at the exibition *Communs d’urgence : avant tout, faire ensemble* in the *France Degsin Week* at Toulouse RoseLab https://francedesignweek.fr/evenement/communs-durgence-avant-tout-faire-ensemble/ & https://francedesignweek.fr/
 
+![Box](doc_images/exibited_commun_d_urgence.jpeg)
+
 Then exibited during OcoterMake from the *Réseau Français des FabLabs* in October. https://www.rfflabs.fr/octobermake-2026/
 
 Due to the sucess the exibition will be travelling across France, I'll try to keep this page updated
