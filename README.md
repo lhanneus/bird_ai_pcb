@@ -21,7 +21,7 @@ ICS-43434 microphone → ESP32-C6 I2S capture → audio stream over Wi-Fi/RTSP �
 
 ### Bill of materials BOM
 
-DIY Hardware cost about 12€ or less .
+DIY Hardware cost about 20€ .
 
 | Part | Reference | Quantity | Notes |
 | :--- | :--- | :---: | :--- |
@@ -33,8 +33,11 @@ DIY Hardware cost about 12€ or less .
 | Antenna | External WiFi antenna (U.FL) | 1 | For extended range |
 
 Battery option & Solar pannel option
-TBD.
-
+- A solar pannel, 5 or 6V
+- A MPPT , SD05CRMA , about 1€ on aliexpress
+- Battery holder, parallel model
+- 18650 lithium Battery , 3.3V & 3000mAh (or more), 3 to 4 battery in parallel otherwise it depends on your solar exposition.
+- connector to the board
 
 ### PCB Schematic
 
